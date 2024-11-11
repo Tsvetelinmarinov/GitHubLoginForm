@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
@@ -8,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="appdata.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label fx:id="logo_lbl" layoutX="118.0" layoutY="36.0" prefHeight="43.0" prefWidth="105.0" text="GitHub">
          <font>
@@ -35,12 +36,12 @@
             <Font size="14.0" />
          </font>
       </PasswordField>
-      <Button fx:id="lgn_btn" layoutX="54.0" layoutY="300.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" text="Login">
+      <Button fx:id="lgn_btn" onAction="#lgn" layoutX="54.0" layoutY="300.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" text="Login">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button fx:id="rst_btn" layoutX="195.0" layoutY="300.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" text="Reset">
+      <Button fx:id="rst_btn" onAction="#rst" layoutX="195.0" layoutY="300.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" text="Reset">
          <font>
             <Font size="16.0" />
          </font>
