@@ -1,0 +1,129 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/*
+ * Content pane
+ */
+ .root{
+ 	-fx-background-color: #202124;
+ }
+ 
+ 
+ /*
+ * Logo
+ */
+ #logo_lbl{
+  -fx-text-fill: WHITE;
+ }
+  
+  
+ /*
+  * Username label
+  */
+ #usrnm_lbl{
+  -fx-text-fill: #999999;
+ }
+   
+ #usrnm_lbl:hover{
+  -fx-text-fill: WHITE;
+ }
+   
+   
+ /*
+  * Password label
+  */
+ #psswrd_lbl{
+  -fx-text-fill: #999999;
+ }
+    
+ #psswrd_lbl:hover{
+  -fx-text-fill: WHITE;
+ }
+    
+    
+ /*
+  * Output label
+  */
+ #_output_{
+  -fx-text-fill: WHITE;
+ }
+     
+     
+ /*
+ * register label
+ */
+ #reg_lbl{
+  -fx-text-fill: #999999;
+ }
+      
+ #reg_lbl:hover{
+  -fx-text-fill: WHITE;
+ }
+      
+      
+ /*
+ * Check box
+ */
+ #check_box{
+  -fx-text-fill: #999999;
+ }
+       
+ #check_box:hover{
+  -fx-text-fill: WHITE;
+ }
+       
+       
+ /*
+ * Login button
+ */
+ #lgn_btn{
+  -fx-text-fill: WHITE;
+  -fx-background-color: #102079;
+ }
+        
+ #lgn_btn:hover{
+  -fx-background-color: BLUE;
+ }
+        
+        
+ /*
+ * Reset button
+ */
+ #rst_btn{
+  -fx-text-fill: WHITE;
+  -fx-background-color: #791005;
+ }
+         
+ #rst_btn:hover{
+  -fx-background-color: RED;
+ }
+         
+         
+ /*
+ * Register button
+ */
+ #reg_btn{
+ 	-fx-text-fill: WHITE;
+ 	-fx-background-color: #106003;
+ }
+ 
+ #reg_btn:hover{
+ 	-fx-background-color: GREEN;
+ }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
