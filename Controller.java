@@ -12,25 +12,16 @@ package appdata;
 
 
 
-
-
-
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.Border;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-
 import java.io.IOException;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-
-
-
-
 
 
 
@@ -88,8 +79,6 @@ public class Controller {
 	
 	
 	
-	
-	
 	/**
 	 * Connect to the database
 	 */
@@ -98,9 +87,7 @@ public class Controller {
 	
 	
 	
-	
-	
-	
+		
 	
 	/**
 	 * Login button functionality
@@ -145,10 +132,6 @@ public class Controller {
 	
 	
 	
-	
-	
-	
-	
 	/**
 	 * Reset button functionality
 	 */
@@ -176,8 +159,6 @@ public class Controller {
 	
 	
 	
-	
-	
 	/**
 	 * Register button functionality
 	 * @throws IOException 
@@ -194,10 +175,6 @@ public class Controller {
 	    arg0.setResizable(false);
 	    arg0.show();
 	}
-	
-	
-	
-	
 	
 	
 }
