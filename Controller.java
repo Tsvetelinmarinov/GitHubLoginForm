@@ -1,3 +1,4 @@
+
 /**
 * Controller
 */
@@ -12,11 +13,24 @@ package appdata;
 
 
 
+
+
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.Border;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+
+
+
+
 
 
 
@@ -158,6 +172,32 @@ public class Controller {
 		check_box.setTextFill(Color.WHITE);
 		check_box.setDisable(false);
 	}
+	
+	
+	
+	
+	
+	
+	/**
+	 * Register button functionality
+	 * @throws IOException 
+	 */
+	public void show_reg_form(ActionEvent actn_evnt) throws IOException {
+		Stage arg0 = new Stage();
+		Parent reg_root = FXMLLoader.load(getClass().getResource("reg.fxml"));
+	    Scene arg1 = new Scene(reg_root);
+	    
+	    arg1.getStylesheets().add(getClass().getResource("reg_desing.css").toExternalForm());
+	    
+	    arg0.setTitle("Register now");
+	    arg0.setScene(arg1);
+	    arg0.setResizable(false);
+	    arg0.show();
+	}
+	
+	
+	
+	
 	
 	
 }
