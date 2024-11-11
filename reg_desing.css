@@ -1,0 +1,80 @@
+.root{
+	-fx-background-color: #202124;
+}
+
+#reg_logo{
+	-fx-text-fill: WHITE;
+}
+
+#reg_fname{
+	-fx-text-fill: #999999;
+}
+
+#reg_fname:hover{
+	-fx-text-fill: WHITE;
+}
+
+#reg_lname{
+	-fx-text-fill: #999999;
+}
+
+#reg_lname:hover{
+	-fx-text-fill: WHITE;
+}
+
+#reg_email{
+	-fx-text-fill: #999999;
+}
+
+#reg_email:hover{
+	-fx-text-fill: WHITE;
+}
+
+#reg_usrnm{
+	-fx-text-fill: #999999;
+}
+
+#reg_usrnm:hover{
+	-fx-text-fill: WHITE;
+}
+
+#reg_psswrd{
+	-fx-text-fill: #999999;
+}
+
+#reg_psswrd:hover{
+	-fx-text-fill: WHITE;
+}
+
+#reg_reg_btn{
+	-fx-text-fill: WHITE;
+	-fx-background-color: #106003;
+}
+
+#reg_reg_btn:hover{
+	-fx-background-color: GREEN;
+}
+
+#reg_rst_btn{
+	-fx-text-fill: WHITE;
+	-fx-background-color: #791005;
+}
+
+#reg_rst_btn:hover{
+	-fx-background-color: RED;
+}
+
+
+#reg_check_box{
+	-fx-text-fill: #999999;
+}
+
+#reg_check_box:hover{
+	-fx-text-fill: WHITE;
+}
+
+
+#reg_output_{
+	-fx-text-fill: WHITE;
+}
+
