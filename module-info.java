@@ -7,7 +7,7 @@
 /**
  * 
  */
-module LoginForm {
+module GitHubLoginForm {
 	
 	requires javafx.controls;
 	requires javafx.fxml;
