@@ -64,6 +64,11 @@ public class Database {
 	 */
 	public HashMap<String,String> get_users_data(){ return database; }
 	
+
+	/**
+	 * toString method
+	 */
+	public String toString(){ return database.toString(); }
 	
 	
 	
