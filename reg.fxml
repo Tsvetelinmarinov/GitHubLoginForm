@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="reg_email" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="appdata.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label fx:id="reg_logo" layoutX="154.0" layoutY="24.0" prefHeight="22.0" prefWidth="139.0" text="Sing up to GitHub">
          <font>
@@ -41,12 +42,12 @@
             <Font name="Hack Regular" size="15.0" />
          </font>
       </Label>
-      <Button fx:id="reg_reg_btn" layoutX="109.0" layoutY="521.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="183.0" text="Register">
+      <Button fx:id="reg_reg_btn" onAction="#reg" layoutX="109.0" layoutY="521.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="183.0" text="Register">
          <font>
             <Font name="Hack Regular" size="17.0" />
          </font>
       </Button>
-      <Button fx:id="reg_rst_btn" layoutX="109.0" layoutY="565.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="183.0" text="Reset">
+      <Button fx:id="reg_rst_btn" onAction="#reg_rst" layoutX="109.0" layoutY="565.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="183.0" text="Reset">
          <font>
             <Font name="Hack Regular" size="17.0" />
          </font>
