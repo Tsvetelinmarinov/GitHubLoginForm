@@ -43,7 +43,7 @@ public class Controller {
 	 */
 	
 	/**
-	 * Username filed
+	 * User name filed
 	 */
 	
 	@FXML
@@ -75,6 +75,55 @@ public class Controller {
 	private CheckBox check_box;
 	
 	
+	/**
+	 * Register form output label
+	 */
+	@FXML
+	private Label reg_output_;
+	
+	
+	/**
+	 * Register form user name field
+	 */
+	@FXML
+	private TextField reg_usrnm_field;
+	
+	
+	/**
+	 * Register form password field
+	 */
+	@FXML
+	private PasswordField reg_psswrd_field;
+	
+	
+	/**
+	 * Register form check box
+	 */
+	@FXML
+	private CheckBox reg_check_box;
+	
+	
+	/**
+	 * Register form first name field
+	 */
+	@FXML
+	private TextField reg_fname_field;
+	
+	
+	/**
+	 * Register form last name field
+	 */
+	@FXML
+	private TextField reg_lname_field;
+	
+	
+	/**
+	 * Register form email field
+	 */
+	@FXML
+	private TextField reg_email_field;
+	
+	
 	
 	
 	
@@ -93,7 +142,7 @@ public class Controller {
 	 * Login button functionality
 	 */
 	public void lgn(ActionEvent actn_evnt) {
-		//check if the username is correct and its in the database
+		//check if the user name is correct and its in the database
 		if(database.get_users_data().containsKey(usrnm.getText())) {
 			//check if the password is correct
 			if(database.get_users_data().get(usrnm.getText()).equals(String.valueOf(psswrd.getText()))) {
@@ -136,7 +185,7 @@ public class Controller {
 	 * Reset button functionality
 	 */
 	public void rst(ActionEvent actn_evnt) {
-		//reset the username
+		//reset the user name
 		usrnm.setText("");
 		usrnm.setBorder(null);
 		usrnm.setEditable(true);
@@ -174,6 +223,72 @@ public class Controller {
 	    arg0.setScene(arg1);
 	    arg0.setResizable(false);
 	    arg0.show();
+	}
+	
+	
+	
+	
+	
+	/**
+	 * Register new user
+	 */
+	public void reg(ActionEvent actn_evnt) {
+		//check if the register form field are empty
+		boolean dataIsTyped = 
+		(
+		 !(reg_fname_field.getText() == "") 
+		 && 
+		 !(reg_lname_field.getText() == "")
+		 &&
+		 !(reg_email_field.getText() == "")
+		 && 
+		 !(reg_usrnm_field.getText() == "")
+		 &&
+		 !(reg_psswrd_field.getText() == "")
+		);
+		
+		if(dataIsTyped) {
+			if(reg_check_box.isSelected()) {
+				if(database.get_users_data().containsKey(reg_usrnm_field.getText())) {
+					reg_output_.setText("User already exist!");
+					reg_output_.setTextFill(Color.RED);
+					reg_usrnm_field.setBorder(Border.stroke(Color.RED));
+					reg_usrnm_field.setEditable(false);
+				}else {
+					database.get_users_data().put(reg_usrnm_field.getText(),String.valueOf(reg_psswrd_field.getText()));
+					reg_output_.setText("Successful registration!");
+					reg_output_.setTextFill(Color.GREEN);
+				}
+				
+			}else {
+				reg_output_.setText("Agree with the terms first!");
+				reg_output_.setTextFill(Color.RED);
+				reg_check_box.setTextFill(Color.RED);
+			}
+		}else {
+			reg_output_.setText("Fill all the fields!");
+			reg_output_.setTextFill(Color.RED);
+		}
+				
+	}
+	
+	
+	
+	/**
+	 * Register form reset button
+	 */
+	public void reg_rst(ActionEvent actn_evnt) {
+		reg_fname_field.setText("");
+		reg_lname_field.setText("");
+		reg_email_field.setText("");
+		reg_usrnm_field.setText("");
+		reg_usrnm_field.setBorder(null);
+		reg_usrnm_field.setEditable(true);
+		reg_psswrd_field.setText("");
+		reg_check_box.setSelected(false);
+		reg_check_box.setBorder(null);
+		reg_output_.setTextFill(Color.WHITE);
+		reg_output_.setText("");
 	}
 	
 	
